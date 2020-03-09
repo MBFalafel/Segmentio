@@ -197,6 +197,15 @@ open class Segmentio: UIView {
         segmentioItems[index].removeBadge()
         segmentioCollectionView?.reloadData()
     }
+  
+    open func setTitle(at index: Int, _ title: String) {
+        if segmentioItems.count > 0 {
+            segmentioItems[index].setTitle(title)
+            segmentioCollectionView?.reloadData()
+        } else {
+            print("Error: Index out of range")
+        }
+    }
     
     // MARK: Collection view setup
     
