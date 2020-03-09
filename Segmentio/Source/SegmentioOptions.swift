@@ -39,6 +39,10 @@ public struct SegmentioItem {
         self.badgeCount = nil
         self.badgeColor = nil
     }
+  
+    public mutating func setTitle(_ title: String) {
+        self.title = title
+    }
     
 }
 
